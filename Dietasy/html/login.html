@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    />
+    <title>Dietasy</title>
+    <link rel="stylesheet" href="../login.css" />
+</head>
+<body>
+<header>
+    <div class="contenedor-main">
+        <div class="contenedor main">
+
+            <div class="contenedor-logo">
+
+                <img src="../img/icono.png"
+                     alt="Icono">
+                <h1 class="logo"><a href="../index.html">Dietasy</a></h1>
+            </div>
+
+            <div class="contenedor-user">
+                <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                <!--<button id="btnaccesibilidad" class = "boton-accesibilidad" aria-pressed="false">
+                    <img src="../img/accesibilidad-icon.png" width="50px">
+                    <script src="scripts.js"></script>
+                </button>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor-navbar">
+        <nav class="navbar contenedor">
+            <i class="fa-solid fa-bars"></i>
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+
+        </nav>
+    </div>
+</header>
+<main class="main-contenido">
+    <div class="contenedor">
+        <br>
+        <h1 class="cabecera-1">Inicia Sesión</h1>
+        <form action="#" method="post" class="formulario" onsubmit="return redirigeAIndex();">
+            <div class="campo">
+                <label for="email">Correo electronico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electronico" required>
+            </div>
+            <div class="campo">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" placeholder="Tu contraseña" required>
+            </div>
+            <button id="index-link" class="campo">Inicia Sesión
+            </button>
+            <div class="campo">
+                <input id="registro-link" type="submit" value="Registrarse">
+                <script src="../js/registrolink.js"></script>
+            </div>
+        </form>
+        <br>
+    </div>
+</main>
+<script src="../js/indexlink.js"></script>
+</body>
+<footer class="footer">
+
+    <div class="contenedor contenedor-footer">
+        <div class="menu-footer">
+            <div class="contact-info">
+                <p class="title-footer">Información de Contacto</p>
+                <ul>
+                    <li>
+                        Dirección: C. Consuegra, 3, Chamartín, 28036 Madrid
+                    </li>
+                    <li>Teléfono: 678910111</li>
+                    <li>Fax: 678910111</li>
+                    <li>Email: dietasy@soporte.com</li>
+                </ul>
+                <div class="social-icons">
+							<span class="facebook">
+								<i class="fa-brands fa-facebook-f"></i>
+							</span>
+                    <span class="twitter">
+								<i class="fa-brands fa-twitter"></i>
+							</span>
+                    <span class="youtube">
+								<i class="fa-brands fa-youtube"></i>
+							</span>
+                    <span class="pinterest">
+								<i class="fa-brands fa-pinterest-p"></i>
+							</span>
+                    <span class="instagram">
+								<i class="fa-brands fa-instagram"></i>
+							</span>
+                </div>
+            </div>
+
+            <div class="information">
+                <p class="title-footer">Información</p>
+                <ul>
+                    <li><a href="sobre-nosotros.html">Acerca de Nosotros</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script
+        src="https://kit.fontawesome.com/81581fb069.js"
+        crossorigin="anonymous"
+></script>
+</html>

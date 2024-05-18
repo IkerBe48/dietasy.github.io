@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Dietasy</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+	<?php
+		require_once 'conexion.php';
+		?>
+		<header>
+			<div class="contenedor-main">
+				<div class="contenedor main">
+
+					<div class="contenedor-logo">
+
+						<img src="img/icono.png"
+						   alt="Icono">
+						<h1 class="logo"><a href="index.html">Dietasy</a></h1>
+					</div>
+
+					<div class="contenedor-user">
+						<a href="html/login.html"><i class="fa-solid fa-user"></i></a>
+						<!--<button id="btnaccesibilidad" class = "boton-accesibilidad" aria-pressed="false">
+							<img src="img/accesibilidad-icon.png" width="50px">
+							<script src="js/scripts.js"></script>
+						</button>-->
+					</div>
+				</div>
+			</div>
+
+			<div class="contenedor-navbar">
+				<nav class="navbar contenedor">
+					<i class="fa-solid fa-bars"></i>
+					<ul class="menu">
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="html/sobre-nosotros.html">Sobre nosotros</a></li>
+						<li><a href="html/contacto.html">Contacto</a></li>
+					</ul>
+
+					<!--<form class="buscador-form">
+						<input type="search" placeholder="Buscar..." />
+						<button class="btn-buscar">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</button>
+					</form>-->
+				</nav>
+			</div>
+		</header>
+
+		<section class="banner">
+			<div class="contenido-banner">
+				<p>Recetas</p>
+				<h2>100% Saludables <br />Pasta al Pesto</h2>
+			</div>
+		</section>
+
+		<main class="main-contenido">
+			<section class="contenedor top-categorias">
+				<br>
+				<h1 class="cabecera-1">Mejores Categorías</h1>
+				<div class="contenedor-categorias">
+					<div class="card-categoria categoria-veg">
+						<p>Vegana</p>
+						<span id="vegano-link">Ver más</span>
+						<script src="js/veganolink.js"></script>
+					</div>
+					<div class="card-categoria categoria-paleo">
+						<p>Paleo</p>
+						<span id="paleo-link">Ver más</span>
+						<script src="js/paleolink.js"></script>
+					</div>
+					<div class="card-categoria categoria-dulce">
+						<p>Dulces</p>
+						<span id="dulce-link">Ver más</span>
+						<script src="js/dulcelink.js"></script>
+					</div>
+				</div>
+			</section>
+
+
+
+			<section class="galeria">
+				<img
+					src="img/albon-veg.jpg"
+					alt="Gallery Img1"
+					class="galeria-img-1"
+				/><img
+					src="img/atun-tomate.jpg"
+					alt="Gallery Img2"
+					class="galeria-img-2"
+				/><img
+					src="img/ensalada-pasta.jpg"
+					alt="Gallery Img3"
+					class="galeria-img-3"
+				/><img
+					src="img/lasana.jpg"
+					alt="Gallery Img4"
+					class="galeria-img-4"
+				/><img
+					src="img/pizza.jpg"
+					alt="Gallery Img5"
+					class="galeria-img-5"
+				/>
+			</section>
+
+			<section class="contenedor sepeciales">
+				<h1 class="cabecera-1">Especiales</h1>
+				<br>
+				<div class="contenedor-productos">
+					<!-- Producto 1 -->
+					<div class="card-producto">
+						<div class="contenedor-img">
+							<img src="img/pizza.jpg" alt="Pizza Tradicional" />
+
+						</div>
+						<div class="contenido-card-producto">
+							<br>
+							<h3>Pizza Tradicional</h3>
+							<div class="estrellas">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+						</div>
+					</div>
+					<!-- Producto 2 -->
+					<div class="card-producto">
+						<div class="contenedor-img">
+							<img
+								src="img/salmon.jpg"
+								alt="Salmon.jpg"
+							/>
+						</div>
+						<div class="contenido-card-producto">
+							<br>
+							<h3>Salmon a la plancha</h3>
+							<div class="estrellas">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+						</div>
+					</div>
+					<!--  -->
+					<div class="card-producto">
+						<div class="contenedor-img">
+							<img src="img/pure.jpg" alt="Pure" />
+						</div>
+						<div class="contenido-card-producto">
+							<br>
+							<h3>Puré de calabaza</h3>
+							<div class="estrellas">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+						</div>
+					</div>
+					<!--  -->
+					<div class="card-producto">
+						<div class="contenedor-img">
+							<img src="img/paella.jpg" alt="Paella" />
+						</div>
+						<div class="contenido-card-producto">
+							<br>
+							<h3>Paella</h3>
+							<div class="estrellas">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</section>
+		</main>
+		<footer class="footer">
+
+			<div class="contenedor contenedor-footer">
+				<div class="menu-footer">
+					<div class="contact-info">
+						<p class="title-footer">Información de Contacto</p>
+						<ul>
+							<li>
+								Dirección: C. Consuegra, 3, Chamartín, 28036 Madrid
+							</li>
+							<li>Teléfono: 678910111</li>
+							<li>Fax: 678910111</li>
+							<li>Email: dietasy@soporte.com</li>
+						</ul>
+						<div class="social-icons">
+							<span class="facebook">
+								<i class="fa-brands fa-facebook-f"></i>
+							</span>
+							<span class="twitter">
+								<i class="fa-brands fa-twitter"></i>
+							</span>
+							<span class="youtube">
+								<i class="fa-brands fa-youtube"></i>
+							</span>
+							<span class="pinterest">
+								<i class="fa-brands fa-pinterest-p"></i>
+							</span>
+							<span class="instagram">
+								<i class="fa-brands fa-instagram"></i>
+							</span>
+						</div>
+					</div>
+
+					<div class="information">
+						<p class="title-footer">Información</p>
+						<ul>
+							<li><a href="html/sobre-nosotros.html">Acerca de Nosotros</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script
+				src="https://kit.fontawesome.com/81581fb069.js"
+				crossorigin="anonymous"
+		></script>
+	</body>
+</html>
